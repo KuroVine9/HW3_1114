@@ -9,7 +9,7 @@ public:
 		empList.push_back(emp);
 	}
 	void ShowAllSalaryInfo() const {
-		for (auto a : empList) { a->ShowSalaryInfo(); }
+		for (auto a : empList) a->ShowSalaryInfo();
 	}
 	void ShowTotalSalary() const {
 		int sum = 0;
