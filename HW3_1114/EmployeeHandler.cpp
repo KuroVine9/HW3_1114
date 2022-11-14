@@ -3,7 +3,7 @@
 
 class EmployeeHandler {
 private:
-	std::vector<Employee*> empList;
+	std::vector<Employee*> empList;	// 업캐스팅을 위한 슈퍼클래스 포인터 배열
 public:
 	void AddEmployee(Employee* emp) {
 		empList.push_back(emp);
@@ -17,6 +17,6 @@ public:
 		std::cout << "salary sum: " << sum << std::endl;
 	}
 	~EmployeeHandler() {
-		for (auto a : empList) delete(a);
+		for (auto a : empList) delete(a);	// 배열에 저장되어있는 객체 메모리 해제
 	}
 };
