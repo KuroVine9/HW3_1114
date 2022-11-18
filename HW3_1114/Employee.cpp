@@ -15,7 +15,5 @@ public:
 	virtual int GetPay() const { return 0; }
 	virtual void ShowSalaryInfo() const = 0;	// 자식 클래스들이 무조건 구현해야 하는 가상함수
 
-	~Employee() {
-		delete[]name;
-	}
+	virtual ~Employee() { delete[]name; }
 };

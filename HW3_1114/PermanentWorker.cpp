@@ -12,4 +12,5 @@ public:
 		Employee::ShowYourName();
 		std::cout << "salary: " << GetPay() << std::endl << std::endl;
 	}
+	virtual ~PermanentWorker() {}
 };

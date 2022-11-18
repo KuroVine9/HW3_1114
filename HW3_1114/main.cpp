@@ -1,6 +1,3 @@
-#include "TemporaryWorker.cpp"
-#include "SalesWorker.cpp"
-#include "PermanentWorker.cpp"
 #include "EmployeeHandler.cpp"
 
 int main() {

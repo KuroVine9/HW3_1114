@@ -1,4 +1,7 @@
 #include "Employee.cpp"
+#include "TemporaryWorker.cpp"
+#include "SalesWorker.cpp"
+#include "PermanentWorker.cpp"
 #include <vector>
 
 class EmployeeHandler {
@@ -17,6 +20,6 @@ public:
 		std::cout << "salary sum: " << sum << std::endl;
 	}
 	~EmployeeHandler() {
-		for (auto a : empList) delete(a);	// 배열에 저장되어있는 객체 메모리 해제
+		for (auto a : empList) delete a;	// 배열에 저장되어있는 객체 메모리 해제
 	}
 };

@@ -14,4 +14,5 @@ public:
 		ShowYourName();
 		std::cout << "salary: " << GetPay() << std::endl << std::endl;
 	}
+	virtual ~TemporaryWorker() {}
 };
